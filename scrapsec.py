@@ -100,7 +100,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     email = args.email
-    if not os.environ.get('SENDGRID_API_KE'):
+    if not os.environ.get('SENDGRID_API_KEY'):
         print("Run install.sh first! \nRun it using the following command \n. install.sh ")
         exit()
     
